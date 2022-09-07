@@ -1,0 +1,17 @@
+#include<stdio.h>
+//wap to find sum of two integers using pointers
+int main(int argc, char const *argv[])
+{
+    int a, b, *p, *q, sum;
+
+   printf("Enter two integers to add\n");
+   scanf("%d%d", &a, &b);
+
+   p = &a;
+   q = &b;
+
+   sum = *p + *q;
+
+   printf("Sum of the numbers = %d\n", sum);
+    return 0;
+}
